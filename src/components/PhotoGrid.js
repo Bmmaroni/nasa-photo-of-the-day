@@ -20,7 +20,7 @@ export default function PhotoGrid() {
 
     return (
         <div>
-            <PhotoCard date={photo.date} title={photo.title} img={photo.url} description={photo.explanation} />;
+            <PhotoCard date={photo.date} title={photo.title} img={photo.url} description={photo.explanation} />
         </div>
     );
 }

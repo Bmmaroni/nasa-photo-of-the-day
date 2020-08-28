@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import PhotoGrid from "./components/PhotoGrid";
+import { Button } from 'reactstrap';
 
 function App() {
   return (
