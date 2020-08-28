@@ -9,7 +9,7 @@ const PhotoCard = (props) => {
             <Card style= {styles.card}>
                 <CardBody>
                     <CardTitle tag='h2'><Badge color='warning' >{props.title} </Badge></CardTitle>
-                    <CardText><Description description={props.description} date={props.date} /></CardText>
+                    <CardText><Description style= {styles.fadedText} description={props.description} date={props.date} /></CardText>
                 </CardBody>
             </Card>
         </div>
@@ -18,6 +18,10 @@ const PhotoCard = (props) => {
 const styles = {
     card: {
       border: 'none'
+    },
+
+    fadedText: {
+        background: 'success'
     }
   };
 
