@@ -1,17 +1,24 @@
 import React from 'react';
 import Description from './Description';
-import { Badge } from 'reactstrap';
+import { Badge, Card, CardBody, CardTitle, CardText, Col } from 'reactstrap';
 
 const PhotoCard = (props) => {
     return(
         <div>
-            <h2><Badge color='warning' >{props.title} </Badge></h2>
-            <div>
-                <img src={props.img} alt='NASA APOD'/>
-                <Description description={props.description} date={props.date} />
-            </div>
+            <img src={props.img} alt='NASA APOD'/>
+            <Card style= {styles.card}>
+                <CardBody>
+                    <CardTitle tag='h2'><Badge color='warning' >{props.title} </Badge></CardTitle>
+                    <CardText><Description description={props.description} date={props.date} /></CardText>
+                </CardBody>
+            </Card>
         </div>
     );
 };
+const styles = {
+    card: {
+      border: 'none'
+    }
+  };
 
 export default PhotoCard;

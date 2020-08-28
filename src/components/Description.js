@@ -10,7 +10,7 @@ const Description = (props) => {
         <div>
             <Button outline color="success" onClick={toggle} margin='100px'>Description</Button>
             <Fade in={fadeIn} tag="p" className="mt-3">
-                <h4>{props.date}</h4>
+                <h5>{props.date}</h5>
                 <p>{props.description}</p>
             </Fade>
         </div>
